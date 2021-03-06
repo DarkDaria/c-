@@ -1,4 +1,3 @@
-//zamiana wierszy wskazanych przez urzytkownika
 
 #include <stdio.h>
 #include <time.h>
@@ -44,13 +43,6 @@ void zamien(int index_1, int index_2, double tab[][N]) {
         double pom = tab[index_1][i];
         tab[index_1][i] = tab[index_2][i];
         tab[index_2][i] = pom;
-    }
-    int j;
-    for (i = 0; i < 2; i++) {
-        for (j = 0; j < 2; j++) {
-            printf("%d ", tab[i][j]);
-        }
-        printf("\n");
     }
 }
 
