@@ -1,4 +1,4 @@
-//nadal srednio dziala po przekatnej
+//nadal srednio dziala po przekatnej ale poprawi©
 
 #include <stdio.h>
 #include <time.h>
@@ -51,7 +51,7 @@ void menu() {
             wypisz_kolumne(t2w, numer_kolumny);
             break;
         case 3:
-            //przekatna wyswietlanie plus zapytanie od ktorej strony DO DOKO≈ÉCZENIA
+            //przekatna wyswietlanie plus zapytanie od ktorej strony DO DOKO„CZENIA
             wypelnij_losowymi(*t2w);
             wypisz(t2w);
             rodzaj_przekatnej = wskaz_przekatna();
