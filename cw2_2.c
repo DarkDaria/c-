@@ -1,4 +1,4 @@
-
+//zamiana wierszy wskazanych przez użytkownika
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
@@ -40,9 +40,9 @@ void zamien(int index_1, int index_2, double tab[][N]) {
 
     int i;
     for (i = 0; i < N; i++) {
-        double pom = tab[index_1][i];
+        double temp = tab[index_1][i];
         tab[index_1][i] = tab[index_2][i];
-        tab[index_2][i] = pom;
+        tab[index_2][i] = temp;
     }
 }
 
