@@ -1,4 +1,5 @@
-//zamiana wierszy wskazanych przez u≈ºytkownika
+//zamiana wierszy wskazanych przez uæytkownika
+
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
@@ -10,8 +11,6 @@ void menu();
 void wypisz(double *tab);
 
 void wypelnij_losowymi(double *tab);
-
-int wskaz_wiersz();
 
 void zamien(int index_1, int index_2, double tab[][N]);
 
@@ -33,7 +32,6 @@ void menu() {
     zamien(index_wiersza_1, index_wiersza_2, t2w);
     printf("Po:\n");
     wypisz(*t2w);
-
 }
 
 void zamien(int index_1, int index_2, double tab[][N]) {
@@ -45,7 +43,6 @@ void zamien(int index_1, int index_2, double tab[][N]) {
         tab[index_2][i] = temp;
     }
 }
-
 
 void wypisz(double *tab) {
     int i, j;
