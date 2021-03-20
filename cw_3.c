@@ -1,3 +1,5 @@
+//przypisanie rozmiaru tablicy poprzez liczbe podana przez użytkownika
+//podanie liczb
 //wyliczenie sredniej liczb podanych przez uzytkownika
 
 #include <stdio.h>
