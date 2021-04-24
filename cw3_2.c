@@ -9,7 +9,6 @@ int main()
         printf("%s\n",&slowo_1);
         printf("Podaj slowo: ");
         scanf("%s",&slowo_2);
-
     printf( "Polaczone slowo to: %s", strcat(slowo_1, slowo_2));
     return 0;
 }
