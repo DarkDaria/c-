@@ -1,21 +1,22 @@
 #include <stdio.h>
-char slowo_pierwsze[] = "Robocop";
-char slowo_drugie[] = "cop";
 
-int dlugosc_slowa(char *tekst) {
+char t1[] = "Robocop";
+char t2[] = "cop";
+
+int sizeof_char(char *t) {
     int i;
-    for (i = 0; tekst[i] != 0; i++); //zmierzenie dlugosci ciagu znakow,szukamy konca ciagu czyli 0 w kodzie Ascii
+    for (i = 0; t[i] != 0; i++);
     return i;
 }
 
-int sprawdz_koniec_wyrazu(char *slowo_glowne, char *slowo_koniec) {
-    int rozmiar_caly = dlugosc_slowa(slowo_glowne);
-    int rozmiar_konca = dlugosc_slowa(slowo_koniec);
-    int size = rozmiar_konca;
+int strend(char *t1, char *t2) {
+    int sizeof_total = sizeof_char(t1);
+    int sizeof_end = sizeof_char(t2);
+    int size = sizeof_end;
     for (int i = 0; i < size; i++) {
-        if (slowo_glowne[rozmiar_caly] == slowo_koniec[rozmiar_konca]) {
-            rozmiar_konca--;
-            rozmiar_caly--;
+        if (t1[sizeof_total] == t2[sizeof_end]) {
+            sizeof_end--;
+            sizeof_total--;
         } else {
             return 0;
         }
@@ -24,5 +25,5 @@ int sprawdz_koniec_wyrazu(char *slowo_glowne, char *slowo_koniec) {
 }
 
 int main() {
-    printf("%d", sprawdz_koniec_wyrazu(slowo_pierwsze, slowo_drugie));
+    printf("%d", strend(t1, t2));
 }
