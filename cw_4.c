@@ -1,4 +1,4 @@
-include <stdio.h>
+#include <stdio.h>
 
 char t1[] = "Robocop";
 char t2[] = "cop";
