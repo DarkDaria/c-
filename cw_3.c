@@ -1,4 +1,4 @@
-//przypisanie rozmiaru tablicy poprzez liczbe podana przez u≈ºytkownika
+//przypisanie rozmiaru tablicy poprzez liczbe podana przez uæytkownika
 //podanie liczb
 //wyliczenie sredniej liczb podanych przez uzytkownika
 
@@ -17,7 +17,6 @@ double avg(int *tab, int ilosc_liczb)
 
 int main()
 {
-
     int ilosc_liczb;
     printf("Podaj ilosc liczb do obliczen:");
     scanf("%d",&ilosc_liczb);
