@@ -1,5 +1,3 @@
-//zamiana wierszy wskazanych przez u¾ytkownika
-
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
