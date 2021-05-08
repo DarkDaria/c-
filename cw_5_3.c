@@ -10,5 +10,5 @@ int main() {
     int n;
     printf("Podaj liczbe w ciagu Fibonnacciego: \n");
     scanf("%d", &n);
-    printf("%d liczba ciagu Fibonacciego wynosi %d", n, Fibonacci(n + 1));
+    printf("%d liczba ciagu Fibonacciego wynosi %d", n, Fibonacci(n));
 }
