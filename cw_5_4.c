@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <time.h>
 
-#define FILE "plik.txt"
+#define PLIK "plik.txt"
 
-int Fibonacci(int a) {
+double Fibonacci(int a) {
     if (a < 3) return 1;
 
     else return Fibonacci(a - 2) + Fibonacci(a - 1);
@@ -11,15 +11,24 @@ int Fibonacci(int a) {
 
 int main() {
     int n;
-    FILE * zapis;
+    FILE *fptr;
     printf("Podaj liczbe w ciagu Fibonnacciego: \n");
     scanf("%d", &n);
     clock_t start = clock();
-    printf("%d liczba ciagu Fibonacciego wynosi %d\n", n, Fibonacci(n));
+    printf("%d liczba ciagu Fibonacciego wynosi %.0lf\n", n, Fibonacci(n));
     clock_t end = clock();
     double cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
-    printf("Obliczenie %d liczby ciagu zajelo %f sek. \n", n, cpu_time_used);
-    zapis = fopen(FILE, "w");
-    fprintf(zapis, "%f\n");
-    fclose(FILE);
+    printf("Obliczenie %d liczby ciagu zajelo %.4f sek. \n", n, cpu_time_used);
+    fptr = fopen(PLIK, "rb+");
+    if(fptr == NULL) 
+    {
+        fptr = fopen(PLIK, "w+");
+        fprintf(fptr, "Czas;Liczba\n");
+        fclose(fptr);
+    }
+    fptr = fopen(PLIK, "a+");
+    fprintf(fptr, "%f;", cpu_time_used);
+    fprintf(fptr, "%d\n", n);
+    fclose(fptr);
+    return 0;
 }
