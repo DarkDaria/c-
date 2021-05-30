@@ -92,6 +92,15 @@ void usun_osobe(Osoba **lista) {
         usun(lista, ID);
     }
 }
+void usun_baze(Osoba **lista){
+        Osoba *temp;
+    while (*lista != NULL) {
+        temp = (*lista)->next;
+        free(*lista);
+        *lista=temp;
+    }
+    //Wskaźniki na koncu jest NULL
+}
 
 void wypisz_osobe_lista(Osoba *lista, int ID) {
     int i;
@@ -128,7 +137,8 @@ int main() {
         printf("\n 1 Wpisz dane osoby do bazy");
         printf("\n 2 Usun osobe o podanym indeksie (id)");
         printf("\n 3 Wyswietl osobe o podanym indeksie (id)");
-        printf("\n 4 Wyswietl cala liste\n");
+        printf("\n 4 Wyswietl cala liste");
+        printf("\n 5 Usun cala liste\n");
         printf("\n Wpisz numer: ");
 
         scanf("%d", &option);
@@ -154,7 +164,12 @@ int main() {
                 printf("WYSWIETL CALA BAZE\n");
                 wypisz_liste(lista);
                 break;
+
+            case 5:
+                printf("Usun CALA liste\n");
+                usun_baze(&lista);
+                break;
         }
     } while (option != 0);
-
+    return 0;
 }
