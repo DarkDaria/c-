@@ -1,0 +1,31 @@
+#include <stdio.h>
+#define PLIK "dane_nowe.csv"
+int main() {
+    double a,b,c,x,xmin,xmax,zakres,y,i;
+    int n;
+    printf(" Podaj wspolczynnik kierunkowy prostej a:");
+    scanf("%f",&a);
+    printf("\nPodaj wspolczynnik kierunkowy prostej b:");
+    scanf("%f",&b);
+    printf("\nPodaj wspolczynnik kierunkowy prostej c:");
+    scanf("%f",&c);
+    printf("\nPodaj zakres liczb dla ktorych chcesz wyliczyc funkcje");
+    printf("\nOd:");
+    scanf("%f",&xmin);
+    printf("\nDo:");
+    scanf("%f",&xmax);
+    printf("\nPodaj liczbe wartosci funkcji:");
+    scanf("%d",&n);
+
+
+    zakres=(xmax-xmin)/n;
+
+    FILE *fptr= fopen(PLIK, "a+");
+    for (int i = xmin; i < xmax ; i=i+zakres) {
+        y = a*x*x + b*x + c;
+        printf("%.2f\n",y);
+        fprintf(fptr,"i:%f y:%f\n",i,y);
+    }
+    fclose(fptr);
+    return 0;
+}
