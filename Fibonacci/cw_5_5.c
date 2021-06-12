@@ -23,15 +23,15 @@ int main() {
         double cpu_time_used = ((double) (end - start))  CLOCKS_PER_SEC;
         printf(Obliczenie %d liczby ciagu zajelo %.4f sek. n, n, cpu_time_used);
         fptr = fopen(PLIK, rb+);
-        if (fptr == NULL) if file does not exist, create it
+        if (fptr == NULL) //if file does not exist, create it
         {
             fptr = fopen(PLIK, w+);
-            fprintf(fptr, Liczba;Czasn);
+            fprintf(fptr, "Liczba;Czas\n");
             fclose(fptr);
         }
         fptr = fopen(PLIK, a+);
-        fprintf(fptr, %d;, n);
-        fprintf(fptr, %dn, (int)(cpu_time_used1000));
+        fprintf(fptr, "%d;", n);
+        fprintf(fptr, "%d\n", (int)(cpu_time_used1000));
         fclose(fptr);
       i++;
     }
