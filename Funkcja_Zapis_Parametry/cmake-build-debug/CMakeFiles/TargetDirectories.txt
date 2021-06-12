@@ -1,0 +1,3 @@
+C:/Users/48500/Desktop/Studia/programowanie/211pp2dkrecichwost/Funkcja_Zapis — kopia/cmake-build-debug/CMakeFiles/Funkcja_Zapis.dir
+C:/Users/48500/Desktop/Studia/programowanie/211pp2dkrecichwost/Funkcja_Zapis — kopia/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/48500/Desktop/Studia/programowanie/211pp2dkrecichwost/Funkcja_Zapis — kopia/cmake-build-debug/CMakeFiles/rebuild_cache.dir
