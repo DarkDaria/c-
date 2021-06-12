@@ -3,59 +3,67 @@
 //zapis wyniku do pliku tekstowego
 
 #include <stdio.h>
+
 #define BIN "dane.bin"
 #define CSV "dane.csv"
 
-void getFunctionProperties(double* a, double* b, double* c, double* xmin, double* xmax, int* n);
+void getFunctionProperties(double *a, double *b, double *c, double *xmin, double *xmax, int *n);
+
 void calculateText(double a, double b, double c, double xmin, double xmax, int n);
+
 void calculateBin(double a, double b, double c, double xmin, double xmax, int n);
+
 void readFromFile();
+
 void writeDouble(double value, FILE *file);
+
 double readDouble(FILE *file);
+
 void writeInt(int value, FILE *file);
+
 int readInt(FILE *file);
 
 int main() {
-    double a,b,c,xmin,xmax;
+    double a, b, c, xmin, xmax;
     int n;
-    getFunctionProperties(&a,&b,&c,&xmin, &xmax, &n); //pobieranie danych od uzytkownika (a,b,c,zakres min,zakres max,ilosc wartosci danej funkcji)
+    getFunctionProperties(&a, &b, &c, &xmin, &xmax,&n); //pobieranie danych od uzytkownika (a,b,c,zakres min,zakres max,ilosc wartosci danej funkcji)
 
-    calculateText(a,b,c, xmin, xmax, n); //obliczenia funkcji oraz zapis do pliku csv
+    calculateText(a, b, c, xmin, xmax, n); //obliczenia funkcji oraz zapis do pliku csv
 
-    calculateBin(a,b,c, xmin, xmax, n); //obliczenia funkcji zapus do pliku bin
+    calculateBin(a, b, c, xmin, xmax, n); //obliczenia funkcji zapus do pliku bin
 
     return 0;
 }
 
-void getFunctionProperties(double* a, double* b, double* c, double* xmin, double* xmax, int* n){
+void getFunctionProperties(double *a, double *b, double *c, double *xmin, double *xmax, int *n) {
     printf(" Podaj wspolczynnik kierunkowy prostej a:");
-    scanf("%lf",a);
+    scanf("%lf", a);
     printf("\nPodaj wspolczynnik kierunkowy prostej b:");
-    scanf("%lf",b);
+    scanf("%lf", b);
     printf("\nPodaj wspolczynnik kierunkowy prostej c:");
-    scanf("%lf",c);
+    scanf("%lf", c);
     printf("\nPodaj zakres liczb dla ktorych chcesz wyliczyc funkcje");
     printf("\nOd:");
-    scanf("%lf",xmin);
+    scanf("%lf", xmin);
     printf("\nDo:");
-    scanf("%lf",xmax);
+    scanf("%lf", xmax);
     printf("\nPodaj liczbe wartosci funkcji:");
-    scanf("%d",n);
+    scanf("%d", n);
 }
 
 void calculateText(double a, double b, double c, double xmin, double xmax, int n) {
-    double x, zakres,y;
+    double x, zakres, y;
 
-    FILE *fptr= fopen(CSV, "w+");
+    FILE *fptr = fopen(CSV, "w+");
 
-    zakres=(xmax-xmin)/(n-1);
+    zakres = (xmax - xmin) / (n - 1);
 
     fprintf(fptr, "x;y\n");
     for (int i = 0; i < n; i++) {
-        x = xmin + i*zakres;
-        y = a*x*x + b*x + c;
-        printf("f(%.2lf) = %.2lf\n",x,y);
-        fprintf(fptr, "%.2lf;%.2lf\n",x,y);
+        x = xmin + i * zakres;
+        y = a * x * x + b * x + c;
+        printf("f(%.2lf) = %.2lf\n", x, y);
+        fprintf(fptr, "%.2lf;%.2lf\n", x, y);
     }
     fclose(fptr);
 
@@ -65,20 +73,20 @@ void calculateText(double a, double b, double c, double xmin, double xmax, int n
 }
 
 void calculateBin(double a, double b, double c, double xmin, double xmax, int n) {
-    double zakres,x, y;
+    double zakres, x, y;
 
-    FILE *fptr= fopen(BIN, "wb");
+    FILE *fptr = fopen(BIN, "wb");
 
     writeDouble(a, fptr);
     writeDouble(b, fptr);
     writeDouble(c, fptr);
     writeInt(n, fptr);
 
-    zakres=(xmax-xmin)/(n-1);
+    zakres = (xmax - xmin) / (n - 1);
 
     for (int i = 0; i < n; i++) {
-        x = xmin + i*zakres;
-        y = a*x*x + b*x + c;
+        x = xmin + i * zakres;
+        y = a * x * x + b * x + c;
         writeDouble(x, fptr);
         writeDouble(y, fptr);
     }
@@ -91,10 +99,10 @@ void calculateBin(double a, double b, double c, double xmin, double xmax, int n)
     readFromFile();
 }
 
-void readFromFile(){
-    double a,b,c,x,y;
+void readFromFile() {
+    double a, b, c, x, y;
     int n;
-    FILE *fptr= fopen(BIN, "rb");
+    FILE *fptr = fopen(BIN, "rb");
 
     printf("----------------------------------\n");
     printf("Odczyt danych z pliku binarnego...\n");
@@ -114,22 +122,22 @@ void readFromFile(){
     fclose(fptr);
 }
 
-void writeDouble(double value, FILE *file){
-    fwrite(&value,sizeof(double), 1, file);
+void writeDouble(double value, FILE *file) {
+    fwrite(&value, sizeof(double), 1, file);
 }
 
-double readDouble(FILE *file){
+double readDouble(FILE *file) {
     double value;
-    fread(&value, sizeof(double),1,file);
+    fread(&value, sizeof(double), 1, file);
     return value;
 }
 
-void writeInt(int value, FILE *file){
-    fwrite(&value,sizeof(int), 1, file);
+void writeInt(int value, FILE *file) {
+    fwrite(&value, sizeof(int), 1, file);
 }
 
-int readInt(FILE *file){
+int readInt(FILE *file) {
     int value;
-    fread(&value, sizeof(int),1,file);
+    fread(&value, sizeof(int), 1, file);
     return value;
 }

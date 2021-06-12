@@ -92,12 +92,13 @@ void usun_osobe(Osoba **lista) {
         usun(lista, ID);
     }
 }
-void usun_baze(Osoba **lista){
-        Osoba *temp;
+
+void usun_baze(Osoba **lista) {
+    Osoba *temp;
     while (*lista != NULL) {
         temp = (*lista)->next;
         free(*lista);
-        *lista=temp;
+        *lista = temp;
     }
     //Wskaźniki na koncu jest NULL
 }

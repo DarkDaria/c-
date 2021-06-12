@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/48500/Desktop/Studia/programowanie/211pp2dkrecichwost/Funkcja_Zapis — kopia
+# Install script for directory: C:/Users/48500/Desktop/Studia/programowanie/211pp2dkrecichwost/Funkcja_Zapis_Parametry
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/48500/Desktop/Studia/programowanie/211pp2dkrecichwost/Funkcja_Zapis — kopia/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/48500/Desktop/Studia/programowanie/211pp2dkrecichwost/Funkcja_Zapis_Parametry/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/48500/Desktop/Studia/programowanie/211pp2dkrecichwost/Funkcja_Zapis — kopia/main.c" "C:/Users/48500/Desktop/Studia/programowanie/211pp2dkrecichwost/Funkcja_Zapis — kopia/cmake-build-debug/CMakeFiles/Funkcja_Zapis.dir/main.c.obj"
+  "C:/Users/48500/Desktop/Studia/programowanie/211pp2dkrecichwost/Funkcja_Zapis_Parametry/main.c" "C:/Users/48500/Desktop/Studia/programowanie/211pp2dkrecichwost/Funkcja_Zapis_Parametry/cmake-build-debug/CMakeFiles/Funkcja_Zapis.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
