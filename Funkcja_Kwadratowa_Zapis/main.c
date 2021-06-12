@@ -1,3 +1,7 @@
+//zapis wyniku x i y funkcji kwadratowej stworzonej przez dane podane przez uzytkownika.
+//zapis wyniku do pliku binarnego
+//zapis wyniku do pliku tekstowego
+
 #include <stdio.h>
 #define BIN "dane.bin"
 #define CSV "dane.csv"
@@ -14,11 +18,11 @@ int readInt(FILE *file);
 int main() {
     double a,b,c,xmin,xmax;
     int n;
-    getFunctionProperties(&a,&b,&c,&xmin, &xmax, &n);
+    getFunctionProperties(&a,&b,&c,&xmin, &xmax, &n); //pobieranie danych od uzytkownika (a,b,c,zakres min,zakres max,ilosc wartosci danej funkcji)
 
-    calculateText(a,b,c, xmin, xmax, n);
+    calculateText(a,b,c, xmin, xmax, n); //obliczenia funkcji oraz zapis do pliku csv
 
-    calculateBin(a,b,c, xmin, xmax, n);
+    calculateBin(a,b,c, xmin, xmax, n); //obliczenia funkcji zapus do pliku bin
 
     return 0;
 }
