@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/48500/Desktop/Studia/programowanie/211pp2dkrecichwost/Fibbonaci_rekurencja_zapis/cw_5_4.c
+stdio.h
+-
+time.h
+-
+

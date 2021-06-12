@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/48500/Desktop/Studia/programowanie/211pp2dkrecichwost/Tablica_Zamiana/cw2.c
+stdio.h
+-
+time.h
+-
+stdlib.h
+-
+

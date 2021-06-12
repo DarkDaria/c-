@@ -1,0 +1,3 @@
+C:/Users/48500/Desktop/Studia/programowanie/211pp2dkrecichwost/Srednia_Liczb/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/48500/Desktop/Studia/programowanie/211pp2dkrecichwost/Srednia_Liczb/cmake-build-debug/CMakeFiles/Srednia_Liczb.dir
+C:/Users/48500/Desktop/Studia/programowanie/211pp2dkrecichwost/Srednia_Liczb/cmake-build-debug/CMakeFiles/rebuild_cache.dir
