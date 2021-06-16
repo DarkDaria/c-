@@ -129,17 +129,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Funkcja_Zapis
+# Target rules for targets named Funkcja_Zapis_Parametry
 
 # Build rule for target.
-Funkcja_Zapis: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Funkcja_Zapis
-.PHONY : Funkcja_Zapis
+Funkcja_Zapis_Parametry: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Funkcja_Zapis_Parametry
+.PHONY : Funkcja_Zapis_Parametry
 
 # fast build rule for target.
-Funkcja_Zapis/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Funkcja_Zapis.dir\build.make CMakeFiles/Funkcja_Zapis.dir/build
-.PHONY : Funkcja_Zapis/fast
+Funkcja_Zapis_Parametry/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Funkcja_Zapis_Parametry.dir\build.make CMakeFiles/Funkcja_Zapis_Parametry.dir/build
+.PHONY : Funkcja_Zapis_Parametry/fast
 
 main.obj: main.c.obj
 
@@ -147,7 +147,7 @@ main.obj: main.c.obj
 
 # target to build an object file
 main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Funkcja_Zapis.dir\build.make CMakeFiles/Funkcja_Zapis.dir/main.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Funkcja_Zapis_Parametry.dir\build.make CMakeFiles/Funkcja_Zapis_Parametry.dir/main.c.obj
 .PHONY : main.c.obj
 
 main.i: main.c.i
@@ -156,7 +156,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Funkcja_Zapis.dir\build.make CMakeFiles/Funkcja_Zapis.dir/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Funkcja_Zapis_Parametry.dir\build.make CMakeFiles/Funkcja_Zapis_Parametry.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -165,7 +165,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Funkcja_Zapis.dir\build.make CMakeFiles/Funkcja_Zapis.dir/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Funkcja_Zapis_Parametry.dir\build.make CMakeFiles/Funkcja_Zapis_Parametry.dir/main.c.s
 .PHONY : main.c.s
 
 # Help Target
@@ -176,7 +176,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Funkcja_Zapis
+	@echo ... Funkcja_Zapis_Parametry
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

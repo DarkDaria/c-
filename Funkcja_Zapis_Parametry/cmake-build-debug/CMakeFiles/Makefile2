@@ -71,7 +71,7 @@ CMAKE_BINARY_DIR = C:\Users\48500\Desktop\Studia\programowanie\211pp2dkrecichwos
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/Funkcja_Zapis.dir/all
+all: CMakeFiles/Funkcja_Zapis_Parametry.dir/all
 
 .PHONY : all
 
@@ -81,36 +81,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/Funkcja_Zapis.dir/clean
+clean: CMakeFiles/Funkcja_Zapis_Parametry.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Funkcja_Zapis.dir
+# Target rules for target CMakeFiles/Funkcja_Zapis_Parametry.dir
 
 # All Build rule for target.
-CMakeFiles/Funkcja_Zapis.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Funkcja_Zapis.dir\build.make CMakeFiles/Funkcja_Zapis.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Funkcja_Zapis.dir\build.make CMakeFiles/Funkcja_Zapis.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\48500\Desktop\Studia\programowanie\211pp2dkrecichwost\Funkcja_Zapis_Parametry\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target Funkcja_Zapis"
-.PHONY : CMakeFiles/Funkcja_Zapis.dir/all
+CMakeFiles/Funkcja_Zapis_Parametry.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Funkcja_Zapis_Parametry.dir\build.make CMakeFiles/Funkcja_Zapis_Parametry.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Funkcja_Zapis_Parametry.dir\build.make CMakeFiles/Funkcja_Zapis_Parametry.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\48500\Desktop\Studia\programowanie\211pp2dkrecichwost\Funkcja_Zapis_Parametry\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target Funkcja_Zapis_Parametry"
+.PHONY : CMakeFiles/Funkcja_Zapis_Parametry.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Funkcja_Zapis.dir/rule: cmake_check_build_system
+CMakeFiles/Funkcja_Zapis_Parametry.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\48500\Desktop\Studia\programowanie\211pp2dkrecichwost\Funkcja_Zapis_Parametry\cmake-build-debug\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Funkcja_Zapis.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Funkcja_Zapis_Parametry.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\48500\Desktop\Studia\programowanie\211pp2dkrecichwost\Funkcja_Zapis_Parametry\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/Funkcja_Zapis.dir/rule
+.PHONY : CMakeFiles/Funkcja_Zapis_Parametry.dir/rule
 
 # Convenience name for target.
-Funkcja_Zapis: CMakeFiles/Funkcja_Zapis.dir/rule
+Funkcja_Zapis_Parametry: CMakeFiles/Funkcja_Zapis_Parametry.dir/rule
 
-.PHONY : Funkcja_Zapis
+.PHONY : Funkcja_Zapis_Parametry
 
 # clean rule for target.
-CMakeFiles/Funkcja_Zapis.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Funkcja_Zapis.dir\build.make CMakeFiles/Funkcja_Zapis.dir/clean
-.PHONY : CMakeFiles/Funkcja_Zapis.dir/clean
+CMakeFiles/Funkcja_Zapis_Parametry.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Funkcja_Zapis_Parametry.dir\build.make CMakeFiles/Funkcja_Zapis_Parametry.dir/clean
+.PHONY : CMakeFiles/Funkcja_Zapis_Parametry.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
