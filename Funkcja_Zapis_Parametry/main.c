@@ -1,3 +1,7 @@
+//zapis wyniku x i y funkcji kwadratowej stworzonej przez dane podane przez uzytkownika.
+//zapis wyniku do pliku binarnego
+//zapis wyniku do pliku tekstowego
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -20,24 +24,37 @@ void writeInt(int value, FILE *file);
 
 int readInt(FILE *file);
 
-int main(int argc, char *aragv[]) {
-
-    if (*aragv[argc] = NULL) {
-        double a, b, c, xmin, xmax;
-    }
-    double a = atof(aragv[1]);
-    double b = atof(aragv[2]);
-    double c = atof(aragv[3]);
-    double xmin = atof(aragv[4]);
-    double xmax = atof(aragv[5]);
-    printf("%f", a);
+int main(int argc, char *argv[]) {
+    printf("%d\n", argc);
+    printf("%s\n", argv[0]);
+    printf("%s\n", argv[1]);
+    printf("%s\n", argv[2]);
+    printf("%s\n", argv[3]);
+    printf("%s\n", argv[4]);
+    printf("%s\n", argv[5]);
+    printf("%s\n", argv[6]);
+    double a, b, c, xmin, xmax;
     int n;
-    getFunctionProperties(&a, &b, &c, &xmin, &xmax, &n);
-
-    calculateText(a, b, c, xmin, xmax, n);
-
-    calculateBin(a, b, c, xmin, xmax, n);
-
+    if (argc == 7) {
+        a = atoi(argv[1]);
+        b = atoi(argv[2]);
+        c = atoi(argv[3]);
+        xmin = atoi(argv[4]);
+        xmax = atoi(argv[5]);
+        n = atoi(argv[6]);
+        printf("%2.lf\n", a);
+        printf("%2.lf\n", b);
+        printf("%2.lf\n", c);
+        printf("%2.lf\n", xmin);
+        printf("%2.lf\n", xmax);
+        printf("%2.lf\n", n);
+        calculateText(a, b, c, xmin, xmax, n); //obliczenia funkcji oraz zapis do pliku csv
+        calculateBin(a, b, c, xmin, xmax, n); //obliczenia funkcji zapus do pliku bin
+    } else {
+        getFunctionProperties(&a, &b, &c, &xmin, &xmax,&n);//getFunctionProperties(&a, &b, &c, &xmin, &xmax,&n); //pobieranie danych od uzytkownika (a,b,c,zakres min,zakres max,ilosc wartosci danej funkcji)
+        calculateText(a, b, c, xmin, xmax, n); //obliczenia funkcji oraz zapis do pliku csv
+        calculateBin(a, b, c, xmin, xmax, n); //obliczenia funkcji zapus do pliku bin
+    }
     return 0;
 }
 

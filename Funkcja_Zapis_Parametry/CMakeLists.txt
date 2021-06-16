@@ -3,4 +3,4 @@ project(Funkcja_Zapis C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(Funkcja_Zapis main.c)
+add_executable(main.c)
