@@ -1,11 +1,11 @@
-#include stdio.h
-#include time.h
+#include <stdio.h>
+#include <time.h>
 
 #define PLIK dane_nowe.csv
 
 long long int Fibonacci(int a) {
 
-    if (a 3) return 1;
+    if (a< 3) return 1;
 
     else return Fibonacci(a - 2) + Fibonacci(a - 1);
 }
@@ -13,7 +13,7 @@ long long int Fibonacci(int a) {
 int main() {
     int i = 20;
     long long int x;
-    while (i 52) {
+    while (i < 52) {
         int n;
         FILE fptr;
         n = i;
@@ -30,7 +30,7 @@ int main() {
         fptr = fopen(PLIK, rb + );
         if (fptr == NULL) //if file does not exist, create it
         {
-            fptr = fopen(PLIK, w + );
+            fptr = fopen(PLIK, w+ );
             fprintf(fptr, "Liczba;Czas\n");
             fclose(fptr);
         }

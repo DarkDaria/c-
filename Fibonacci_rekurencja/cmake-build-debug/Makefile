@@ -66,10 +66,10 @@ RM = "C:\Program Files\JetBrains\CLion 2021.1\bin\cmake\win\bin\cmake.exe" -E rm
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\48500\Desktop\Studia\programowanie\211pp2dkrecichwost\Fibonacci
+CMAKE_SOURCE_DIR = C:\Users\48500\Desktop\Studia\programowanie\211pp2dkrecichwost\Fibonacci_rekurencja
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\48500\Desktop\Studia\programowanie\211pp2dkrecichwost\Fibonacci\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\48500\Desktop\Studia\programowanie\211pp2dkrecichwost\Fibonacci_rekurencja\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -98,9 +98,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\48500\Desktop\Studia\programowanie\211pp2dkrecichwost\Fibonacci\cmake-build-debug\CMakeFiles C:\Users\48500\Desktop\Studia\programowanie\211pp2dkrecichwost\Fibonacci\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\48500\Desktop\Studia\programowanie\211pp2dkrecichwost\Fibonacci_rekurencja\cmake-build-debug\CMakeFiles C:\Users\48500\Desktop\Studia\programowanie\211pp2dkrecichwost\Fibonacci_rekurencja\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\48500\Desktop\Studia\programowanie\211pp2dkrecichwost\Fibonacci\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\48500\Desktop\Studia\programowanie\211pp2dkrecichwost\Fibonacci_rekurencja\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,44 +129,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Fibonacci
+# Target rules for targets named Fibonacci_rekurencja
 
 # Build rule for target.
-Fibonacci: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Fibonacci
-.PHONY : Fibonacci
+Fibonacci_rekurencja: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Fibonacci_rekurencja
+.PHONY : Fibonacci_rekurencja
 
 # fast build rule for target.
-Fibonacci/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Fibonacci.dir\build.make CMakeFiles/Fibonacci.dir/build
-.PHONY : Fibonacci/fast
+Fibonacci_rekurencja/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Fibonacci_rekurencja.dir\build.make CMakeFiles/Fibonacci_rekurencja.dir/build
+.PHONY : Fibonacci_rekurencja/fast
 
-cw_5_5.obj: cw_5_5.c.obj
+cw_5_3.obj: cw_5_3.c.obj
 
-.PHONY : cw_5_5.obj
+.PHONY : cw_5_3.obj
 
 # target to build an object file
-cw_5_5.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Fibonacci.dir\build.make CMakeFiles/Fibonacci.dir/cw_5_5.c.obj
-.PHONY : cw_5_5.c.obj
+cw_5_3.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Fibonacci_rekurencja.dir\build.make CMakeFiles/Fibonacci_rekurencja.dir/cw_5_3.c.obj
+.PHONY : cw_5_3.c.obj
 
-cw_5_5.i: cw_5_5.c.i
+cw_5_3.i: cw_5_3.c.i
 
-.PHONY : cw_5_5.i
+.PHONY : cw_5_3.i
 
 # target to preprocess a source file
-cw_5_5.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Fibonacci.dir\build.make CMakeFiles/Fibonacci.dir/cw_5_5.c.i
-.PHONY : cw_5_5.c.i
+cw_5_3.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Fibonacci_rekurencja.dir\build.make CMakeFiles/Fibonacci_rekurencja.dir/cw_5_3.c.i
+.PHONY : cw_5_3.c.i
 
-cw_5_5.s: cw_5_5.c.s
+cw_5_3.s: cw_5_3.c.s
 
-.PHONY : cw_5_5.s
+.PHONY : cw_5_3.s
 
 # target to generate assembly for a file
-cw_5_5.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Fibonacci.dir\build.make CMakeFiles/Fibonacci.dir/cw_5_5.c.s
-.PHONY : cw_5_5.c.s
+cw_5_3.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Fibonacci_rekurencja.dir\build.make CMakeFiles/Fibonacci_rekurencja.dir/cw_5_3.c.s
+.PHONY : cw_5_3.c.s
 
 # Help Target
 help:
@@ -176,10 +176,10 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Fibonacci
-	@echo ... cw_5_5.obj
-	@echo ... cw_5_5.i
-	@echo ... cw_5_5.s
+	@echo ... Fibonacci_rekurencja
+	@echo ... cw_5_3.obj
+	@echo ... cw_5_3.i
+	@echo ... cw_5_3.s
 .PHONY : help
 
 

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/48500/Desktop/Studia/programowanie/211pp2dkrecichwost/Fibonacci/cw_5_5.c" "C:/Users/48500/Desktop/Studia/programowanie/211pp2dkrecichwost/Fibonacci/cmake-build-debug/CMakeFiles/Fibonacci.dir/cw_5_5.c.obj"
+  "C:/Users/48500/Desktop/Studia/programowanie/211pp2dkrecichwost/Fibonacci_rekurencja/cw_5_3.c" "C:/Users/48500/Desktop/Studia/programowanie/211pp2dkrecichwost/Fibonacci_rekurencja/cmake-build-debug/CMakeFiles/Fibonacci_rekurencja.dir/cw_5_3.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

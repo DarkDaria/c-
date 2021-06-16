@@ -75,27 +75,27 @@ include CMakeFiles/Fibonacci.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Fibonacci.dir/flags.make
 
-CMakeFiles/Fibonacci.dir/main.c.obj: CMakeFiles/Fibonacci.dir/flags.make
-CMakeFiles/Fibonacci.dir/main.c.obj: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\48500\Desktop\Studia\programowanie\211pp2dkrecichwost\Fibonacci\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Fibonacci.dir/main.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Fibonacci.dir\main.c.obj -c C:\Users\48500\Desktop\Studia\programowanie\211pp2dkrecichwost\Fibonacci\main.c
+CMakeFiles/Fibonacci.dir/cw_5_5.c.obj: CMakeFiles/Fibonacci.dir/flags.make
+CMakeFiles/Fibonacci.dir/cw_5_5.c.obj: ../cw_5_5.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\48500\Desktop\Studia\programowanie\211pp2dkrecichwost\Fibonacci\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Fibonacci.dir/cw_5_5.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Fibonacci.dir\cw_5_5.c.obj -c C:\Users\48500\Desktop\Studia\programowanie\211pp2dkrecichwost\Fibonacci\cw_5_5.c
 
-CMakeFiles/Fibonacci.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Fibonacci.dir/main.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\48500\Desktop\Studia\programowanie\211pp2dkrecichwost\Fibonacci\main.c > CMakeFiles\Fibonacci.dir\main.c.i
+CMakeFiles/Fibonacci.dir/cw_5_5.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Fibonacci.dir/cw_5_5.c.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\48500\Desktop\Studia\programowanie\211pp2dkrecichwost\Fibonacci\cw_5_5.c > CMakeFiles\Fibonacci.dir\cw_5_5.c.i
 
-CMakeFiles/Fibonacci.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Fibonacci.dir/main.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\48500\Desktop\Studia\programowanie\211pp2dkrecichwost\Fibonacci\main.c -o CMakeFiles\Fibonacci.dir\main.c.s
+CMakeFiles/Fibonacci.dir/cw_5_5.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Fibonacci.dir/cw_5_5.c.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\48500\Desktop\Studia\programowanie\211pp2dkrecichwost\Fibonacci\cw_5_5.c -o CMakeFiles\Fibonacci.dir\cw_5_5.c.s
 
 # Object files for target Fibonacci
 Fibonacci_OBJECTS = \
-"CMakeFiles/Fibonacci.dir/main.c.obj"
+"CMakeFiles/Fibonacci.dir/cw_5_5.c.obj"
 
 # External object files for target Fibonacci
 Fibonacci_EXTERNAL_OBJECTS =
 
-Fibonacci.exe: CMakeFiles/Fibonacci.dir/main.c.obj
+Fibonacci.exe: CMakeFiles/Fibonacci.dir/cw_5_5.c.obj
 Fibonacci.exe: CMakeFiles/Fibonacci.dir/build.make
 Fibonacci.exe: CMakeFiles/Fibonacci.dir/linklibs.rsp
 Fibonacci.exe: CMakeFiles/Fibonacci.dir/objects1.rsp

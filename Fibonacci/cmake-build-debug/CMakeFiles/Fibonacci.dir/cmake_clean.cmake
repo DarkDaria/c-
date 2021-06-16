@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Fibonacci.dir/main.c.obj"
+  "CMakeFiles/Fibonacci.dir/cw_5_5.c.obj"
   "Fibonacci.exe"
   "Fibonacci.exe.manifest"
   "Fibonacci.pdb"

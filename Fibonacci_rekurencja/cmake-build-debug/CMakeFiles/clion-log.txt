@@ -1,0 +1,4 @@
+"C:\Program Files\JetBrains\CLion 2021.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\48500\Desktop\Studia\programowanie\211pp2dkrecichwost\Fibonacci_rekurencja
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/48500/Desktop/Studia/programowanie/211pp2dkrecichwost/Fibonacci_rekurencja/cmake-build-debug

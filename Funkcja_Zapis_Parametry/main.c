@@ -25,36 +25,20 @@ void writeInt(int value, FILE *file);
 int readInt(FILE *file);
 
 int main(int argc, char *argv[]) {
-    printf("%d\n", argc);
-    printf("%s\n", argv[0]);
-    printf("%s\n", argv[1]);
-    printf("%s\n", argv[2]);
-    printf("%s\n", argv[3]);
-    printf("%s\n", argv[4]);
-    printf("%s\n", argv[5]);
-    printf("%s\n", argv[6]);
     double a, b, c, xmin, xmax;
     int n;
     if (argc == 7) {
-        a = atoi(argv[1]);
-        b = atoi(argv[2]);
-        c = atoi(argv[3]);
-        xmin = atoi(argv[4]);
-        xmax = atoi(argv[5]);
-        n = atoi(argv[6]);
-        printf("%2.lf\n", a);
-        printf("%2.lf\n", b);
-        printf("%2.lf\n", c);
-        printf("%2.lf\n", xmin);
-        printf("%2.lf\n", xmax);
-        printf("%2.lf\n", n);
-        calculateText(a, b, c, xmin, xmax, n); //obliczenia funkcji oraz zapis do pliku csv
-        calculateBin(a, b, c, xmin, xmax, n); //obliczenia funkcji zapus do pliku bin
+        a = atof(argv[1]);
+        b = atof(argv[2]);
+        c = atof(argv[3]);
+        xmin = atof(argv[4]);
+        xmax = atof(argv[5]);
+        n = atof(argv[6]);
     } else {
         getFunctionProperties(&a, &b, &c, &xmin, &xmax,&n);//getFunctionProperties(&a, &b, &c, &xmin, &xmax,&n); //pobieranie danych od uzytkownika (a,b,c,zakres min,zakres max,ilosc wartosci danej funkcji)
-        calculateText(a, b, c, xmin, xmax, n); //obliczenia funkcji oraz zapis do pliku csv
-        calculateBin(a, b, c, xmin, xmax, n); //obliczenia funkcji zapus do pliku bin
     }
+    calculateText(a, b, c, xmin, xmax, n); //obliczenia funkcji oraz zapis do pliku csv
+    calculateBin(a, b, c, xmin, xmax, n); //obliczenia funkcji zapus do pliku bin
     return 0;
 }
 
@@ -85,8 +69,8 @@ void calculateText(double a, double b, double c, double xmin, double xmax, int n
     for (int i = 0; i < n; i++) {
         x = xmin + i * zakres;
         y = a * x * x + b * x + c;
-        printf("f(%.2lf) = %.2lf\n", x, y);
-        fprintf(fptr, "%.2lf;%.2lf\n", x, y);
+        printf("f(% .2lf) = %.2lf\n", x, y);
+        fprintf(fptr, "% .2lf;%.2lf\n", x, y);
     }
     fclose(fptr);
 

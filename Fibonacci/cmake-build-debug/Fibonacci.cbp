@@ -74,7 +74,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/48500/Desktop/Studia/programowanie/211pp2dkrecichwost/Fibonacci/main.c">
+		<Unit filename="C:/Users/48500/Desktop/Studia/programowanie/211pp2dkrecichwost/Fibonacci/cw_5_5.c">
 			<Option target="Fibonacci"/>
 		</Unit>
 		<Unit filename="C:/Users/48500/Desktop/Studia/programowanie/211pp2dkrecichwost/Fibonacci/CMakeLists.txt">

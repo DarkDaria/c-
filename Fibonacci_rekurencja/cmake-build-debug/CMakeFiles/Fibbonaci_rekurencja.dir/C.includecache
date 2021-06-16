@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/48500/Desktop/Studia/programowanie/211pp2dkrecichwost/Fibonacci_rekurencja/cw_5_3.c
+stdio.h
+-
+
