@@ -1,3 +1,0 @@
-C:/Users/48500/Desktop/Studia/programowanie/211pp2dkrecichwost/Fibbonaci_rekurencja/cmake-build-debug/CMakeFiles/Fibbonaci_rekurencja.dir
-C:/Users/48500/Desktop/Studia/programowanie/211pp2dkrecichwost/Fibbonaci_rekurencja/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/48500/Desktop/Studia/programowanie/211pp2dkrecichwost/Fibbonaci_rekurencja/cmake-build-debug/CMakeFiles/rebuild_cache.dir
